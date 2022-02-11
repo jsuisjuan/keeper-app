@@ -17,8 +17,16 @@ mongoose.connect(process.env.DB_URI, {useNewUrlParser: true})
 .catch((err) => {
     console.log(err);
 });
-
+/* 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {  
     console.log("Server started on port 3001");
+});
+*/
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3001;
+}
+app.listen(port, function() {
+    console.log("Server has started on port 3001");
 });
