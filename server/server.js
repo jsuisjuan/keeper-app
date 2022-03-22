@@ -22,6 +22,14 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3001;
 }
+
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    })
+}
+
 app.listen(port, function() {
     console.log("Server has started on port 3001");
 });
