@@ -11,8 +11,9 @@ app.use(cors());
 app.use("/", require("./routes/noteRoute"));
 
 mongoose.connect(process.env.DB_URI, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
 }) 
 .then(() => {
     console.log("DB Connected!");
