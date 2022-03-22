@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -10,7 +10,10 @@ app.use(express.json());
 app.use(cors());
 app.use("/", require("./routes/noteRoute"));
 
-mongoose.connect(process.env.DB_URI, {useNewUrlParser: true}) 
+mongoose.connect(process.env.DB_URI, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+}) 
 .then(() => {
     console.log("DB Connected!");
 })
