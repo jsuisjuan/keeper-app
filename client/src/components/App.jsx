@@ -14,7 +14,7 @@ function App() {
   ]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/notes").then(res => {
+    fetch("/notes").then(res => {
       if(res.ok) {
         return res.json()
       }
