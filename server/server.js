@@ -21,10 +21,8 @@ mongoose.connect(process.env.DB_URI, {
     console.log(err);
 });
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3001;
-}
+var PORT = process.env.PORT || 3001;
+
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
@@ -33,6 +31,6 @@ if(process.env.NODE_ENV === 'production') {
     })
 }
 
-app.listen(port, function() {
-    console.log("Server has started on port 3001");
+app.listen(PORT, function() {
+    console.log("Server has started");
 });
