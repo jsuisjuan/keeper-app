@@ -29,7 +29,7 @@ function CreateArea(props) {
       title: note.title,
       content: note.content
     }
-    Axios.post("http://localhost:3001/create", newNote);
+    Axios.post("/create", newNote);
     setNote({
       title:"",
       content:""

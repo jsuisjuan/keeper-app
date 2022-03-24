@@ -4,7 +4,7 @@ import Axios from "axios";
 
 function Note(props) {
   function handleClick() {
-    Axios.delete("http://localhost:3001/delete/" + props.id);
+    Axios.delete("/delete/" + props.id);
     props.onDelete(props.id);
   }
 

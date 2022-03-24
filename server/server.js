@@ -3,7 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
@@ -22,7 +22,6 @@ mongoose.connect(process.env.DB_URI, {
     console.log(err);
 });
 
-var PORT = process.env.PORT || 3001;
 
 __dirname = path.resolve();
 if(process.env.NODE_ENV === "production") {
