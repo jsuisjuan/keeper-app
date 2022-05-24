@@ -6,7 +6,7 @@
 #### Tech's utilizadas: HTML/CSS/React/JavaScript(NodeJS)/ExpressJS/MongoDB
 
 > #### Aqui estão algumas responsabilidades que tive durante o projeto:
-> - Desenvolvi todo o backend do repositório, utilizei MERN stack para desenvolve-lo
+> - Desenvolvi todo o back-end do repositório, utilizei MERN stack para desenvolve-lo
 > - Criei o modelos/schemas para o armazenamento de dados utilizando MongoDB e exportando remotamente para o MongoAtlas
 > - Criei os routes para capturar cada evento (Delete, Create) das anotações através do ExpressJS routes
 > - Importei o website para um servidor gerenciado pela Heroku.
