@@ -1,7 +1,7 @@
 
 # Kepper App
 ## Website link: https://damp-springs-08082.herokuapp.com/
-#### Site dedicado ao armazenamento de anotações desenvolvido por mim junto a Angela Yu no projeto final do curso <i>The Complete 2021 Web Development Bootcamp</i> na Udemy.
+#### Website dedicado ao armazenamento de anotações desenvolvido por mim junto a Angela Yu no projeto final do curso <i>The Complete 2021 Web Development Bootcamp</i> na Udemy.
 
 #### Tech's utilizadas: HTML/CSS/React/JavaScript(NodeJS)/ExpressJS/MongoDB
 
