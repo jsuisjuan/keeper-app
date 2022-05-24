@@ -14,5 +14,6 @@
 Nota: Todo o front-end desenvolvido em React foi feito pela Angela Yu, professora do bootcamp.
 
 #### Desktop preview:
+![Keeper](/assets/keepergif.gif)
 
 
